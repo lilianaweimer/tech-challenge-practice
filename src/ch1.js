@@ -46,6 +46,16 @@ const chapterOne = {
   */
  oneAway: (strA, strB) => {},
 
+ /*
+ STRING COMPRESSION
+  Implement a method to perform basic string compression 
+  using the counts of repeated characters. If the "compressed"
+  string would not become smaller than the original string,
+  retrun the original string. You can assume the string only 
+  contains: [a-z][A-Z].
+ */
+ stringCompression: (str) => {},
+
 };
 
 module.exports = chapterOne;

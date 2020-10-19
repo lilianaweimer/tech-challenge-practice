@@ -60,13 +60,13 @@ describe('Chapter One', () => {
   describe('Palindrome Permutation', () => {
     
     it.skip('should return true if the string is a permutation of a palindrome', () => {
-      const result = chapter.urlify('tact coa');
+      const result = chapter.palindromePermutation('tact coa');
       expect(result).to.equal(true);
       // taco cat
     });
 
     it.skip('should return false if the string is not a permutation of a palindrome', () => {
-      const result = chapter.urlify('carapace');
+      const result = chapter.palindromePermutation('carapace');
       expect(result).to.equal(false);
     });
 
@@ -75,28 +75,42 @@ describe('Chapter One', () => {
   describe('One Away', () => {
     
     it.skip('should return true if the strings are one addition away', () => {
-      const result = chapter.urlify('pale', 'ple');
+      const result = chapter.oneAway('pale', 'ple');
       expect(result).to.equal(true);
     });
 
     it.skip('should return true if the strings are one subtraction away', () => {
-      const result = chapter.urlify('pale', 'pales');
+      const result = chapter.oneAway('pale', 'pales');
       expect(result).to.equal(true);
     });
 
     it.skip('should return true if the strings are one replacement away', () => {
-      const result = chapter.urlify('pale', 'pile');
+      const result = chapter.oneAway('pale', 'pile');
       expect(result).to.equal(true);
     });
 
     it.skip('should return true if the strings are zero edits away', () => {
-      const result = chapter.urlify('pale', 'pale');
+      const result = chapter.oneAway('pale', 'pale');
       expect(result).to.equal(true);
     });
 
     it.skip('should return false if the strings are NOT one edit away', () => {
-      const result = chapter.urlify('pale', 'pail');
+      const result = chapter.oneAway('pale', 'pail');
       expect(result).to.equal(false);
+    });
+
+  });
+
+  describe('String Compression', () => {
+    
+    it.skip('should return a compressed string if there are duplicates', () => {
+      const result = chapter.stringCompression('aabcccccaaa');
+      expect(result).to.equal('a2bb1c5a3');
+    });
+
+    it.skip('should return the original string if compression would not shorten it', () => {
+      const result = chapter.stringCompression('abcde');
+      expect(result).to.equal('abcde');
     });
 
   });
