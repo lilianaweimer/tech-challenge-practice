@@ -1,0 +1,27 @@
+{
+  "name": "tech-challenge-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lilianaweimer/tech-challenge-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lilianaweimer/tech-challenge-practice/issues"
+  },
+  "homepage": "https://github.com/lilianaweimer/tech-challenge-practice#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.0"
+  }
+}
