@@ -22,6 +22,20 @@ describe('Chapter One', () => {
       expect(result).to.equal(false);
     });
 
+  describe('Check Permutation', () => {
+
+    it('should return true if the second string contains a permutation of the first', () => {
+      const result = chapter.checkPermutation('ab', 'balloon');
+      expect(result).to.equal(true);
+    });
+
+    it('should return false if the second string does NOT contain a permutation of the first', () => {
+      const result = chapter.checkPermutation('ab', 'lampoon');
+      expect(result).to.equal(false);
+    });
+
+  });
+
   });
 
 });
