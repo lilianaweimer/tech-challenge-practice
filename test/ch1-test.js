@@ -41,17 +41,17 @@ describe('Chapter One', () => {
   describe('URLify', () => {
     
     it.skip('should correctly transform sample string one', () => {
-      const result = chapter.urlify('this is a test');
+      const result = chapter.urlify('this is a test', 14);
       expect(result).to.equal('this%20is%20a%20test');
     });
 
     it.skip('should correctly transform sample string two', () => {
-      const result = chapter.urlify(' another url  test ');
+      const result = chapter.urlify(' another url  test ', 19);
       expect(result).to.equal('%20another%20url%20%20test%20');
     });
 
     it.skip('should not change strings with no spaces', () => {
-      const result = chapter.urlify('nospaces');
+      const result = chapter.urlify('nospaces', 8);
       expect(result).to.equal('nospaces');
     });
 
@@ -67,6 +67,35 @@ describe('Chapter One', () => {
 
     it.skip('should return false if the string is not a permutation of a palindrome', () => {
       const result = chapter.urlify('carapace');
+      expect(result).to.equal(false);
+    });
+
+  });
+
+  describe('One Away', () => {
+    
+    it.skip('should return true if the strings are one addition away', () => {
+      const result = chapter.urlify('pale', 'ple');
+      expect(result).to.equal(true);
+    });
+
+    it.skip('should return true if the strings are one subtraction away', () => {
+      const result = chapter.urlify('pale', 'pales');
+      expect(result).to.equal(true);
+    });
+
+    it.skip('should return true if the strings are one replacement away', () => {
+      const result = chapter.urlify('pale', 'pile');
+      expect(result).to.equal(true);
+    });
+
+    it.skip('should return true if the strings are zero edits away', () => {
+      const result = chapter.urlify('pale', 'pale');
+      expect(result).to.equal(true);
+    });
+
+    it.skip('should return false if the strings are NOT one edit away', () => {
+      const result = chapter.urlify('pale', 'pail');
       expect(result).to.equal(false);
     });
 

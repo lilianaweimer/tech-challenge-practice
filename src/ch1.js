@@ -16,7 +16,7 @@ const chapterOne = {
     Given two strings, write a method to decide
     if one is a permutation of the other. 
   */
- checkPermutation: (stringA, stringB) => {},
+ checkPermutation: (strA, strB) => {},
 
   /* 
   URLIFY
@@ -34,6 +34,17 @@ const chapterOne = {
     need to be limited to just dictionary words.
   */
  palindromePermutation: (str) => {},
+
+  /* 
+  ONE AWAY
+    Given two strings, write a function to check if they are
+    one edit (or zero edits) away from each other. 
+    Possible edits are:
+    1. insert a character
+    2. remove a character
+    3. replace a character
+  */
+ oneAway: (strA, strB) => {},
 
 };
 
