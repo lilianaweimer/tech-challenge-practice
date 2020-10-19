@@ -56,6 +56,9 @@ const chapterOne = {
  */
  stringCompression: (str) => {},
 
+ 
+ // leaving the others out for now as I don't understand what they are asking for
+
 };
 
 module.exports = chapterOne;
