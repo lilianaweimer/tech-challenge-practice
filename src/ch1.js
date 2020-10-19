@@ -19,7 +19,7 @@ const chapterOne = {
  checkPermutation: (stringA, stringB) => {},
 
   /* 
-  URLify
+  URLIFY
     Write a method to replace all spaces in a string with '%20.'
     You may assume that the string has sufficient space at the end
     to hold the additional characters, and that you are given
@@ -28,13 +28,12 @@ const chapterOne = {
  urlify: (str, chars) => {},
 
   /* 
-  URLify
-    Write a method to replace all spaces in a string with '%20.'
-    You may assume that the string has sufficient space at the end
-    to hold the additional characters, and that you are given
-    the 'true' length of the string.
+  PALINDROME PERMUTATION
+    Given a string, write a method to determine if it is
+    a permutation of a palindrome. The palindrome does not
+    need to be limited to just dictionary words.
   */
- urlify: (str, chars) => {},
+ palindromePermutation: (str) => {},
 
 };
 

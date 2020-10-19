@@ -57,4 +57,19 @@ describe('Chapter One', () => {
 
   });
 
+  describe('Palindrome Permutation', () => {
+    
+    it.skip('should return true if the string is a permutation of a palindrome', () => {
+      const result = chapter.urlify('tact coa');
+      expect(result).to.equal(true);
+      // taco cat
+    });
+
+    it.skip('should return false if the string is not a permutation of a palindrome', () => {
+      const result = chapter.urlify('carapace');
+      expect(result).to.equal(false);
+    });
+
+  });
+
 });
