@@ -9,7 +9,15 @@ const chapterOne = {
   CHALLENGE
     What if you cannot use additional data structures?
   */
-  isUnique: (str) => {},
+  isUnique: (str) => {
+    // split the string into an array
+    // turn said array into a set
+    // check the length of the set vs. the length of the array
+    // if same, return true... if not return false
+    str = str.split('');
+    let strSet = new Set(str);
+    return (str.length === strSet.size);
+  },
 
   /* 
   CHECK PERMUTATION
